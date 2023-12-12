@@ -1,2 +1,11 @@
 @import url("main.css");
 
+header {
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 426px) {
+    p, a {
+        font-size: 1.25rem;
+    }
+}

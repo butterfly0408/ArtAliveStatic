@@ -6,7 +6,7 @@
 #teacher_profile > .two-autocol-row {
     gap: var(--gap-400);
     
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 426px) {
         grid-template-columns: 1fr;
     }
 }
@@ -16,7 +16,7 @@
     box-shadow: var(--image-box-shadow);
     border-radius: 0.6rem;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 426px) {
         width: 100%;
     }
 }
@@ -49,7 +49,7 @@
     flex-direction: row;
     gap: 0.5rem;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 426px) {
         flex-direction: column;
     }
 }
