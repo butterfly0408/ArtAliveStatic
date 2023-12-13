@@ -63,12 +63,12 @@
     
     @media screen and (max-width: 769px) {
         padding: 0;
-        width: 100%;
+        width: fit-content;
     }
 }
 
 .painting {
-    width: fit-content;
+    max-width: fit-content;
     height: var(--gallery-image-size);
     display: flex;
     justify-content: center;
@@ -76,7 +76,7 @@
     border: 0.15em solid var(--clr-accent-d);
     border-radius: 0.6rem;
     overflow: hidden;
-    box-shadow: none;
+    /* box-shadow: none; */
     transition: box-shadow var(--transition-time);
     box-shadow: var(--image-box-shadow);
 }
