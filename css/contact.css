@@ -1,7 +1,7 @@
 @import url("main.css");
 
 header {
-    padding-bottom: 0;
+    padding: 0 !important;
 }
 
 @media screen and (max-width: 426px) {

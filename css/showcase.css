@@ -1,0 +1,52 @@
+@import url("main.css");
+
+
+/* GENERAL */
+
+:root {
+    --gallery-image-size: 16rem;
+    
+    @media screen and (max-width: 769px) {
+        --gallery-image-size: 12rem;
+    }
+    @media screen and (max-width: 426px) {
+        --gallery-image-size: 8rem;
+    }
+}
+
+
+
+
+/* EXHIBITION SHOWCASE */
+
+#exhibition-showcase {
+    margin: 0;
+    background-color: var(--clr-accent-l);
+
+    @media screen and (max-width: 769px) {
+        padding: 0;
+    }
+}
+
+#gallery {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--gap-200);
+    
+    @media screen and (max-width: 769px) {
+        padding: 0;
+        width: fit-content;
+    }
+}
+
+.painting-image {
+    width: auto;
+    height: var(--gallery-image-size);
+    border: 0.15em solid var(--clr-accent-d);
+    border-radius: 0.6rem;
+    box-shadow: var(--image-box-shadow);
+}
+
