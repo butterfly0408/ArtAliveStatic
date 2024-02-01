@@ -1,12 +1,15 @@
 @import url("main.css");
 
 
-@media screen and (max-width: 426px) {
-    .pars-div p, h1 {
+@media screen and (max-width: 428px) {
+    .pars-div p, h1, h3 {
         max-width: 30ch;
     }
     .show-more {
         max-width: 20rem;
+    }
+    img {
+        max-width: 2rem;
     }
 }
 
@@ -27,6 +30,10 @@ h3:hover {
     cursor: pointer;
 }
 
+img {
+    max-width: 30rem;
+}
+
 
 #blog {
     margin-top: 0;
@@ -40,6 +47,13 @@ h3:hover {
     gap: 1rem;
     border: solid 0.15rem var(--clr-accent-d);
     border-radius: 0.6rem;
+}
+
+.img-div {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .show-more {
