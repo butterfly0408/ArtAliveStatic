@@ -75,6 +75,7 @@
     color: var(--clr-accent-d);
     font-size: 1rem;
     font-family: var(--ff-sans);
+    box-sizing: border-box;
 }
 
 
@@ -105,14 +106,19 @@ section {
     gap: var(--gap-400);
     box-sizing: border-box;
 
-    @media screen and (max-width: 769px) {
+    @media (max-width: 769px) {
         margin: 2rem 0;
         padding: 3rem;
     }
-    @media screen and (max-width: 426px) {
+    @media (max-width: 426px) {
         margin: 2rem 0;
         padding: 2rem;
     }
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
 }
 
 h1 {

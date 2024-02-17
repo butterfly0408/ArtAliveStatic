@@ -126,3 +126,103 @@
     font-size: var(--fs-300);
 }
 
+
+
+
+
+/* TEATURE FEATURE */
+
+#feature {
+    margin-bottom: 0;
+    background-color: var(--clr-accent-l);
+    border-bottom: solid 0.15rem var(--clr-accent-d);
+}
+
+.profile-img-div {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: var(--image-box-shadow);
+}
+
+.profile-img  {
+    max-width: 20rem;
+    max-height: 20rem;
+}
+
+.images-group {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.images-group .radius-shadow-image {
+    max-height: 20rem;
+    width: max-content;
+}
+
+
+.feature__intro {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    gap: 2rem;
+}
+
+.feature__intro > div {
+    width: 100%;
+}
+
+.feature__intro > div:first-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+}
+
+#feature .container > .pars-div:last-of-type {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media (max-width: 769px) {
+    
+    .images-group {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .images-group .radius-shadow-image {
+        max-width: 15rem;
+        height: max-content;
+    }
+
+    .feature__intro {
+        flex-direction: column;
+    }
+
+    .profile-body {
+        flex-direction: column;
+    }
+
+}

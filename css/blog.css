@@ -1,19 +1,6 @@
 @import url("main.css");
 
 
-@media screen and (max-width: 428px) {
-    .pars-div p, h1, h3 {
-        max-width: 30ch;
-    }
-    .show-more {
-        max-width: 20rem;
-    }
-    img {
-        max-width: 10rem;
-    }
-}
-
-
 main {
     display: flex;
     flex-direction: column;
@@ -28,6 +15,10 @@ h1 {
 
 h3:hover {
     cursor: pointer;
+}
+
+.decorated-link {
+    font-size: var(--fs-400);
 }
 
 img {
@@ -51,9 +42,13 @@ img {
 
 .img-div {
     width: 100%;
-    margin-top: 2rem;
+    margin: 1.5rem 0;
     display: flex;
     justify-content: center;
+}
+
+img {
+    max-width: 20rem;
 }
 
 .show-more {
@@ -77,4 +72,24 @@ img {
 
 .hidden {
     display: none;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 428px) {
+    .pars-div p, h1, h3 {
+        max-width: 30ch;
+    }
+    .show-more {
+        max-width: 20rem;
+    }
+    img {
+        max-width: 10rem;
+    }
 }
