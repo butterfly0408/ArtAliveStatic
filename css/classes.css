@@ -207,14 +207,24 @@
 
 @media (max-width: 769px) {
     
+    .profile-img-div {
+        width: 10rem !important;
+        height: 10rem !important;
+    }
+    
+    .profile-img  {
+        max-width: 15rem !important;
+        max-height: 15rem !important;
+    }
+    
     .images-group {
         gap: 2rem;
         flex-direction: column;
     }
 
     .images-group .radius-shadow-image {
-        max-width: 15rem;
-        height: max-content;
+        max-width: 15rem !important;
+        height: max-content !important;
     }
 
     .feature__intro {
@@ -225,4 +235,22 @@
         flex-direction: column;
     }
 
+}
+
+
+@media (max-width: 426px) {
+    
+    .profile-img-div {
+        width: 10rem !important;
+        height: 10rem !important;
+    }
+    
+    .profile-img  {
+        max-width: 15rem !important;
+        max-height: 15rem !important;
+    }
+    
+    .images-group .radius-shadow-image {
+        max-width: 10rem !important;
+    }
 }
