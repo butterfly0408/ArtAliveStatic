@@ -30,7 +30,7 @@ img {
     margin-top: 0;
 }
 
-.pars-div {
+.pars-div {    
     max-width: fit-content;
     padding: 2rem;
     display: flex;
