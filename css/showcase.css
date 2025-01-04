@@ -15,6 +15,12 @@
 }
 
 
+body {
+    overflow: scroll;
+}
+
+
+
 
 
 /* EXHIBITION SHOWCASE */
@@ -42,11 +48,137 @@
     }
 }
 
+.gallery-tile {
+    box-sizing: border-box;
+    position: relative;
+    background-color: #ABCBD666;
+    border: 0.15em solid var(--clr-accent-d);
+    /* border-radius: 0.6rem; */
+    box-shadow: var(--card-box-shadow);
+}
+
+.tile-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5em;
+    text-align: right;
+    background: transparent;
+}
+
+.fa-magnifying-glass-plus {
+    color: var(--clr-main-l);
+    font-size: var(--fs-800);
+}
+
 .painting-image {
     width: auto;
     height: var(--gallery-image-size);
-    border: 0.15em solid var(--clr-accent-d);
-    border-radius: 0.6rem;
-    box-shadow: var(--image-box-shadow);
+    /* border: 0.15em solid var(--clr-accent-d); */
+    /* border-radius: 0.6rem; */
+    /* box-shadow: var(--image-box-shadow); */
+    opacity: 1;
+    transition: opacity var(--transition-time);
 }
+    .painting-image:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+.tile-detail {
+    box-sizing: border-box;
+    padding: 0.5em;
+    text-align: center;
+}
+
+
+
+/* FOCUS SCREEN: */
+
+#focus-screen {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9;
+}
+
+
+#focus-close {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    /* background-color: darkcyan; */
+}
+
+#focus-close-button i {
+    color: white;
+    font-size: 3rem;
+    opacity: 1;
+    transition: opacity var(--transition-time);
+}
+    #focus-close-button i:hover {
+        opacity: 0.75;
+    }
+
+
+#focus-area {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkblue; */
+}
+
+#focus-img {
+    max-width: 75vw;
+    max-height: 75vh;
+}
+
+#scroll-buttons {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-100);
+    /* background-color: darkgoldenrod; */
+}
+
+#prev-button i,
+#next-button i {
+    color: white;
+    font-size: 3rem;
+    opacity: 1;
+    transition: opacity var(--transition-time);
+}
+    #prev-button i:hover,
+    #next-button i:hover {
+        opacity: 0.75;
+    }
+
+
+#write-up {
+    width: 75vw;
+    height: 75vh;
+    padding: 1em;
+    background-color: var(--clr-main-l);
+    border: solid 0.25em var(--clr-accent-m);
+    border-radius: 0.5em;
+}
+
+
+
 
